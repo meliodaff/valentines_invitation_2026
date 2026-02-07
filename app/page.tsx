@@ -8,9 +8,9 @@ import Stack from "@/Components/Stack";
 import DomeGallery from "@/Components/DomeGallery";
 
 export default function Home() {
-  const [date, setDate] = useState("2026-02-06");
+  const [date, setDate] = useState("");
   const [tries, setTries] = useState(3);
-  const [isTrue, setIsTrue] = useState(false); // set ko muna to true
+  const [isTrue, setIsTrue] = useState(false);
   const [isTapped, setIsTapped] = useState(false);
   const [sheSaidYes, setSheSaidYes] = useState(false);
   const [firstSection, setFirstSection] = useState(false);
@@ -144,7 +144,7 @@ export default function Home() {
             <div className="h-100 w-full ">
               <CircularGallery
                 textColor="#e11d48"
-                scrollSpeed={1}
+                scrollSpeed={2}
                 items={[
                   { image: "1st.jpg", text: "first cinema date" },
                   { image: "5th.jpg", text: "first new year together" },
