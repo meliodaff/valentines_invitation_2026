@@ -23,7 +23,7 @@ export default function Home() {
       return;
     }
 
-    if (date !== "2026-02-06") {
+    if (date !== "2024-08-11") {
       setTries((prev) => prev - 1);
 
       if (tries - 1 === 2) {
