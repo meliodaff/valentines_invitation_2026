@@ -59,38 +59,19 @@
   animation: fade-in 5s ease-in;
 }
 
-@keyframes float-up-sway {
+@keyframes float-up {
   0% {
-    transform: translateY(0) translateX(0) rotate(0deg) scale(0.8);
+    transform: translateY(0) rotate(0deg) scale(0.8);
     opacity: 0;
   }
-  5% {
-    opacity: 0.6;
-  }
-  15% {
-    transform: translateY(-15vh) translateX(15px) rotate(45deg) scale(1);
+  10% {
     opacity: 1;
   }
-  30% {
-    transform: translateY(-30vh) translateX(-10px) rotate(120deg) scale(0.95);
-  }
-  45% {
-    transform: translateY(-45vh) translateX(18px) rotate(200deg) scale(1.05);
-  }
-  60% {
-    transform: translateY(-60vh) translateX(-15px) rotate(270deg) scale(0.9);
-  }
-  75% {
-    transform: translateY(-75vh) translateX(12px) rotate(330deg) scale(1);
-  }
-  85% {
+  90% {
     opacity: 1;
-  }
-  95% {
-    opacity: 0.5;
   }
   100% {
-    transform: translateY(-110vh) translateX(0) rotate(360deg) scale(0.7);
+    transform: translateY(-110vh) rotate(360deg) scale(0.8);
     opacity: 0;
   }
 }
@@ -98,7 +79,7 @@
 .heart {
   position: absolute;
   bottom: 0;
-  animation: float-up-sway 12s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation: float-up 6s linear infinite;
   opacity: 0;
   filter: drop-shadow(0 2px 4px rgba(255, 105, 180, 0.3));
 }

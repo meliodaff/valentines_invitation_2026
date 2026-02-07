@@ -2,7 +2,7 @@ import Image from "next/image";
 const HeartsFloating = () => {
   return (
     <div className="absolute inset-0 pointer-events-none">
-      {[...Array(12)].map((_, i) => (
+      {[...Array(100)].map((_, i) => (
         <Image
           key={i}
           src="/hearts.png"
@@ -11,8 +11,8 @@ const HeartsFloating = () => {
           height={30 + Math.random() * 15}
           className="heart absolute"
           style={{
-            left: `${i * 8 + Math.random() * 10}%`,
-            animationDelay: `${i * 1}s`,
+            left: `${i * 4 + Math.random() * 5}%`,
+            animationDelay: `${i}s`,
             animationDuration: `${10 + Math.random() * 6}s`, // Varied speeds
           }}
         />
